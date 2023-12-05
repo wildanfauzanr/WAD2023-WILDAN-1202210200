@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ShowroomController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,4 +20,4 @@ Route::get('/', function () {
 
 Route::get('/showroom', [ShowroomController::class, 'index'])->name('showroom.index');
 Route::get('/showroom/create', [ShowroomController::class, 'create'])->name('showroom.create');
-Route::get('/showroom/store', [ShowroomController::class, 'index'])->name('showroom.index');
+Route::post('/showroom/store', [ShowroomController::class, 'store'])->name('showroom.store');

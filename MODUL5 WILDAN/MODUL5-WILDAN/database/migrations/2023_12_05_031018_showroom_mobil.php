@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::create('showroom_mobil',function(Blueprint $table) {
 
             $table->id();
-            $table->string('nama_movbil');
+            $table->string('nama_mobil');
             $table->string('brand_mobil');
             $table->string('warna_mobil');
-            $table->string('tipe_mobile');
+            $table->string('tipe_mobil');
             $table->integer('harga_mobil');
         });
     }
